@@ -1,0 +1,11 @@
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 한 행에 3개 */
+  gap: 5px; /* 이미지 간 간격 */
+}
+
+.post-grid img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover; 
+}

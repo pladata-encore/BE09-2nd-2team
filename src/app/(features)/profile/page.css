@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+}
+.left-profile {
+  width: 244px;
+  height: auto;
+}
+.right-profile {
+  margin-left: 300px;
+}

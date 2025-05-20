@@ -1,0 +1,142 @@
+.container {
+  width: 397px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0 18px 18px 0;
+  border: 1px solid #d1d5db;
+}
+
+.noti-wrapper {
+  margin-left: 75px;
+  margin-top: 0;
+}
+
+.noti-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  background-color: white;
+}
+
+.noti-item {
+  display: flex;
+  margin: 12px 0;
+}
+
+.noti-item:hover {
+  background-color: #efefef;
+}
+
+.btn1 {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn1:hover {
+  background-color: #2563eb;
+}
+
+.btn2 {
+  background-color: #efefef;
+  margin-right: 20px;
+  color: black;
+}
+
+.btn2:hover {
+  background-color: #c5c5c5;
+}
+
+.noti-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.noti-content {
+  margin-top: 20px;
+  flex: 1;
+  font-size: 14px;
+  margin-left: 10px;
+  line-height: 1.4;
+}
+
+.noti-username {
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.noti-preview {
+  margin-top: 5px;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  margin-left: 8px;
+  margin-right: 20px;
+}
+
+.noti-btn {
+  margin-left: 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 21px;
+  margin-bottom: 15px;
+  width: 74px;
+  height: 34px;
+  font-weight: bold;
+}
+
+.noti-time {
+  color: #999;
+  font-size: 15px;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.noti-section-title {
+  font-weight: bold;
+  margin-top: 24px;
+  margin-left: 20px;
+}
+
+.follow-request {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.noti-bold {
+  font-weight: bold;
+}
+
+.noti-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+
+.follow-btn {
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #dbdbdb;
+  width: 58px;
+  height: 34px;
+  margin-left: 6px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #d1d5db;
+  margin: 1rem 0;
+}

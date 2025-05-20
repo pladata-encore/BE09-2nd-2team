@@ -1,0 +1,29 @@
+.profile-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1.5px solid #ddd;
+  margin: 5 0 5 0;
+}
+
+.tap-item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  padding: 10px;
+  gap: 10px;
+}
+
+.tab-item.active {
+  border-top: 2px solid black;
+  color: black;
+  font-weight: bold;
+}

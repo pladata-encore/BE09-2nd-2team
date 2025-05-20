@@ -1,0 +1,195 @@
+.post-details-grid {
+  display: flex;
+  width: 500px;
+  padding: 0;
+  flex-direction: column;
+  gap: 0px; /* 각 요소 간의 간격 */
+  border: 1px solid #ddd;
+  font-size: 14px; /* 모든 자식 기본 글꼴 크기 지정 */
+  font-family: "Instargram Sans", sans-serif; /* 글꼴도 통일 */
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #ddd;
+}
+
+.username {
+  font-family: "Instargram Sans", sans-serif;
+  font-weight: bold;
+}
+
+.follow-text-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  font-size: 14px;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.follow-text-button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.modal-description {
+  font-family: "Instargram Sans", sans-serif;
+  font-weight: Medium;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #333;
+  padding: 15;
+  display: flex;
+  gap: 5;
+}
+
+.content-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #ddd;
+  margin-right: 15;
+}
+
+.username {
+  font-size: 14px;
+}
+
+.text-group {
+  display: inline; /* 유저네임 + 글이 자연스럽게 이어지도록 */
+}
+
+.scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0px; /* 스크롤바 숨기기 */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scroll-area::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.content-username {
+  font-family: "Instargram Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 5;
+}
+
+.content-text {
+  font-family: "Instargram Sans", sans-serif;
+  font-weight: 400;
+  white-space: pre-line;
+  font-size: 14px;
+}
+
+.modal-comments {
+  margin-top: 0px;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 5;
+}
+
+.comment-user {
+  font-weight: 600;
+  margin-right: 5;
+}
+
+.comment-group {
+  display: inline; /* 유저네임 + 글이 자연스럽게 이어지도록 */
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.heart-icon {
+  color: black;
+  cursor: pointer;
+  margin-left: 5;
+  transition: transform 0.01s ease, color 0.01s ease;
+}
+
+.heart-icon.liked {
+  color: red;
+}
+
+.like-btn.animate .heart-icon {
+  transform: scale(1.15);
+}
+
+.save-btn {
+  color: black;
+  margin-right: 10;
+  margin-left: auto;
+}
+
+.post-date {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.row4 {
+  padding: 10;
+  border: #ddd;
+}
+
+.add-comment {
+  padding: 10 5 5 5;
+  display: flex;
+  align-items: center;
+  border-top: 1.5px solid #ddd;
+  margin: 5 0 5 0;
+}
+
+.comment-input {
+  border: none;
+  width: 400px;
+}
+
+.comment-input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.send-comment {
+  border: none;
+  background: transparent;
+  color: lightskyblue;
+  font-weight: bold;
+}

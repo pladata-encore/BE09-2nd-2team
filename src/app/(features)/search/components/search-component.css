@@ -1,0 +1,163 @@
+.main-box {
+  display: flex;
+  flex-direction: column;
+  /* 세로 방향 */
+  width: 400px;
+  /* 너비 고정 */
+  height: 100vh;
+  /* 예: 화면 전체 높이 */
+}
+
+.search-box {
+  height: 135px;
+  /* background: lightblue; */
+}
+
+.search-list {
+  flex-grow: 1;
+  /* 남는 높이 모두 차지 */
+  /* background: lightgreen; */
+  overflow-y: auto;
+  /* 내용 넘칠 때 스크롤 */
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.search-title {
+  padding: 12px 14px 36px 24px;
+  margin: 0;
+}
+
+.search-bar {
+  width: 360px !important;
+  height: 40px !important;
+  margin: 0 16px;
+  margin-bottom: 24px;
+  height: 64px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 332px !important;
+  height: 34px !important;
+  border-radius: 10px;
+  border: none;
+  background-color: #efefef;
+  padding: 3 16px;
+  font-size: 16px;
+  outline: none;
+
+  padding-left: 40px;
+  /* 검색 아이콘 공간 확보 */
+}
+
+hr {
+  color: #dadde1;
+  border-width: 0.5px;
+}
+
+h4 {
+  margin: 6 24px;
+  padding-top: 4px;
+}
+
+.profile-box {
+  height: 60px;
+  cursor: pointer;
+
+  /* padding: 8 24px; */
+}
+
+.profile {
+  display: flex;
+  padding: 8 24px;
+  height: 44px;
+}
+
+.profile-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ← 왼쪽 정렬 */
+  justify-content: center;
+  text-align: left;
+}
+
+.profile-info div {
+  flex: 1;
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  height: 100%; /* 부모 요소 높이 100% 채움 */
+}
+
+.user-name,
+.full-name {
+  font-size: 14px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.full-name {
+  color: #737373;
+}
+
+.no-history-box {
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center; /* 세로 중앙 */
+  height: 100%; /* 원하는 높이 */
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.recent-search {
+  display: flex;
+  justify-content: space-between; /* 양 끝 정렬 */
+  align-items: center; /* 수직 가운데 정렬 (선택) */
+  margin: 0 24px;
+}
+
+.recent-search h4 {
+  margin: 0;
+}
+
+.recent-search span {
+  font-size: 14px;
+  color: #0095f6;
+  font-weight: bold;
+}
+
+.clear-button {
+  position: absolute;
+  right: 16px;
+  /* input 내부 오른쪽 여백 감안 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+.clear-button:hover {
+  color: #333;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  pointer-events: none;
+  /* 아이콘에 클릭 이벤트 차단 */
+}

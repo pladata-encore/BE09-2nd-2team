@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  margin-left: 224px;
+  min-height: 100vh;
+  flex-direction: column;
+  line-height: 18px;
+}
+
+.content {
+  display: flex;
+  max-width: 1064px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px 0px 0 110px;
+}
+
+.section {
+  color: rgb(0, 0, 0);
+  color-scheme: light;
+  max-width: 630px;
+  direction: ltr;
+  width: 100%;
+  flex-direction: column;
+  display: block;
+  align-items: stretch;
+  font-size: 14px;
+}

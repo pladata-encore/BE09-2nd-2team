@@ -1,0 +1,128 @@
+.modal-left {
+  height: 600px; /* 단위 추가 */
+  display: flex;
+  position: relative;
+  align-items: center;
+  /* 너비는 필요에 따라 auto 혹은 고정 */
+  width: auto;
+  border-right: none;
+}
+
+.image-wrapper {
+  position: relative;
+  height: 600px; /* 단위 추가 */
+  width: auto;
+  max-width: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  height: 600px; /* 단위 추가 */
+  width: auto;
+}
+
+.image-slider {
+  position: relative;
+  font-size: clamp(10px, 1.5vw, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px; /* 단위 추가 */
+  width: auto;
+  max-width: 100%;
+  /* object-fit은 이미지에만 적용 */
+}
+
+.modal-image {
+  height: 600px; /* 단위 추가 */
+  width: auto;
+  border-radius: 0;
+  object-fit: contain; /* 이미지 비율 유지 */
+  display: block; /* 여백 제거 */
+}
+
+/* 슬라이드 버튼 */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  color: rgba(0, 0, 0, 0.4);
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+  width: 25;
+  height: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 2px 6px rgba(1, 1, 1, 0.3);
+}
+
+.slide-btn.prev {
+  left: 10px;
+}
+
+.slide-btn.next {
+  right: 10px;
+}
+
+.slide-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 12px;
+  z-index: 5;
+}
+
+.slide-indicator span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-indicator span.active {
+  background: #fff;
+}
+
+.modal-close {
+  font-size: clamp(24px, 5vw, 40px);
+  position: absolute;
+  top: 0.1vh;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: white;
+}
+
+.modal-close-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
